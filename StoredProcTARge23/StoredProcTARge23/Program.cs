@@ -10,7 +10,7 @@ namespace StoredProcTARge23
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddDbContext<StoredProcDbContext>(options =>
-            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaulfConnection")));
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
